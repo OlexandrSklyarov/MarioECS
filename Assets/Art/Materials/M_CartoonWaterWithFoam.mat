@@ -13,8 +13,8 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
-  m_LightmapFlags: 2
-  m_EnableInstancingVariants: 0
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -37,24 +37,23 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _FoamOffset: 0.75
-    - _Gloss: 0.1
-    - _Metalic: -0.5
-    - _NormalSpeed: 0.5
+    - _FoamOffset: 2
+    - _Gloss: 0.13
+    - _Metalic: 0.1
     - _NormalStrength: 1
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RipleDissolve: 15
-    - _RipleScale: 512.93
-    - _RipleSpeed: 0.86
-    - _Transperancy: 0.61
-    - _WaveScale: 5
-    - _WaveSpeed: 0.1
+    - _RipleDissolve: 12.3
+    - _RipleScale: 604.97
+    - _RipleSpeed: 0.75
+    - _Transperancy: 0.1
+    - _WaveScale: 1.07
+    - _WaveSpeed: 0.3
     m_Colors:
-    - _BaseColor: {r: 0, g: 0.42456254, b: 2.507568, a: 0}
-    - _FoamColor: {r: 0.22870135, g: 2.82506, b: 3.622512, a: 0}
-    - _NormalSpeed: {r: 0.1, g: -0.5, b: 0, a: 0}
-    - _RipleColor: {r: 0.6379871, g: 2.5988278, b: 3.2616475, a: 0}
+    - _BaseColor: {r: 0.1802649, g: 0.6674354, b: 0.99137014, a: 0}
+    - _FoamColor: {r: 13.3878145, g: 13.833061, b: 14.723554, a: 1}
+    - _NormalSpeed: {r: 0.1, g: -0.1, b: 0, a: 0}
+    - _RipleColor: {r: 14.819412, g: 48.50191, b: 79.12238, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &3131785116338388954
 MonoBehaviour:

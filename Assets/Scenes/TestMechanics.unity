@@ -14,20 +14,20 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 1
-  m_FogColor: {r: 0.19629017, g: 0.3120138, b: 0.32461894, a: 1}
+  m_Fog: 0
+  m_FogColor: {r: 0.498532, g: 0.6828595, b: 0.7666447, a: 1}
   m_FogMode: 2
   m_FogDensity: 0.005
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.6720643, g: 0.7573952, b: 0.9306428, a: 1}
+  m_AmbientSkyColor: {r: 0.89342886, g: 0.842428, b: 0.54188365, a: 1}
   m_AmbientEquatorColor: {r: 0.228, g: 0.25, b: 0.266, a: 1}
   m_AmbientGroundColor: {r: 0.752, g: 0.688, b: 0.56, a: 1}
-  m_AmbientIntensity: 1.78
+  m_AmbientIntensity: 1
   m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.52356106, g: 0.6279049, b: 0.892243, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: e6886bf75b04f467aa3b36b9b3efa869, type: 2}
-  m_HaloStrength: 0.5
+  m_SubtractiveShadowColor: {r: 0.76580364, g: 0.709438, b: 0.8573977, a: 1}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 1001bc62adaa0451cb40206853391b06, type: 2}
+  m_HaloStrength: 0.409
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 203844588}
-  m_IndirectSpecularColor: {r: 0.34186542, g: 0.45937854, b: 0.53731805, a: 1}
+  m_IndirectSpecularColor: {r: 0.06681059, g: 0.4066537, b: 0.5791636, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: e96a9c159f75f2b9f9a33fc1506d539b, type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 9f5f29f7123cc5127ba5be0850fb8222, type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -175,8 +175,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.94092864, g: 0.9424931, b: 0.75209546, a: 1}
-  m_Intensity: 2.83
+  m_Color: {r: 0.9208144, g: 0.8806397, b: 0.652983, a: 1}
+  m_Intensity: 2.79
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -215,12 +215,12 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 2
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
+  m_BounceIntensity: 1.49
+  m_ColorTemperature: 6511
+  m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
@@ -234,13 +234,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 203844586}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.46969965, y: -0.108327016, z: 0.197137, w: 0.8536887}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: 0.27696672, y: 0.5711737, z: -0.7427566, w: 0.21298513}
+  m_LocalPosition: {x: -82.8, y: 147.5, z: 69.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 833914613}
-  m_LocalEulerAnglesHint: {x: 57.636, y: 0.025, z: 26.02}
+  m_LocalEulerAnglesHint: {x: -255.12, y: -220.9, z: 0}
 --- !u!1 &444772255
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,7 +511,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.36078432, g: 0.5803922, b: 0.9882353, a: 1}
+  m_BackGroundColor: {r: 0.35506892, g: 0.54084545, b: 0.8858585, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1011,13 +1011,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2111574618}
     m_Modifications:
+    - target: {fileID: 2008039313600503702, guid: 6485a15fb06e78317a9a431128c55f08, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2008039313600503702, guid: 6485a15fb06e78317a9a431128c55f08, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3627342558162295178, guid: 6485a15fb06e78317a9a431128c55f08, type: 3}
       propertyPath: m_Name
       value: SeaBottom
       objectReference: {fileID: 0}
     - target: {fileID: 3627342558162295178, guid: 6485a15fb06e78317a9a431128c55f08, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8861356359042832950, guid: 6485a15fb06e78317a9a431128c55f08, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1075,6 +1083,10 @@ PrefabInstance:
     - target: {fileID: 4120563204187660104, guid: 0c7774597fb6532a7a338aeb2a1bf924, type: 3}
       propertyPath: m_Name
       value: Water
+      objectReference: {fileID: 0}
+    - target: {fileID: 4120563204187660104, guid: 0c7774597fb6532a7a338aeb2a1bf924, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4120563204187660111, guid: 0c7774597fb6532a7a338aeb2a1bf924, type: 3}
       propertyPath: m_RootOrder
