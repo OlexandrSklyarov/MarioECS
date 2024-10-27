@@ -56,7 +56,7 @@ namespace MarioECS
         private float GetBodyNormalizeSpeed(SharedData data, ref PhysicsBodyData body)
         {
             var speed = data.Config.Hero.MovementConfig.Speed;
-            var vel = body.Rb.velocity;
+            var vel = body.Rb.linearVelocity;
             vel.y = 0f;
 
             return vel.magnitude / speed;

@@ -54,8 +54,8 @@ namespace MarioECS
 
         private void Jump(ref PhysicsBodyData body, ref JumpData jump, SharedData data)
         {
-            var vel = body.Rb.velocity;
-            body.Rb.velocity = new Vector3(vel.x, 0f, vel.z);
+            var vel = body.Rb.linearVelocity;
+            body.Rb.linearVelocity = new Vector3(vel.x, 0f, vel.z);
             
             body.Rb.AddForce
             (

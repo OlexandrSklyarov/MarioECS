@@ -32,7 +32,7 @@ namespace MarioECS
                 ref var view = ref _viewPool.Get(ent);
                 ref var body = ref _bodyPool.Get(ent);
                 
-                var horVelocity = new Vector3(body.Rb.velocity.x, 0f, body.Rb.velocity.z);
+                var horVelocity = new Vector3(body.Rb.linearVelocity.x, 0f, body.Rb.linearVelocity.z);
 
                 var sqVelThreshold = _data.Config.Hero.View.VelocityThreshold * _data.Config.Hero.View.VelocityThreshold;
                 if (horVelocity.sqrMagnitude < sqVelThreshold) continue;

@@ -44,7 +44,7 @@ namespace MarioECS
 
                 var isGrounded = _groundPool.Has(ent);
                 
-                body.Rb.drag = (isGrounded) ? _data.Config.Hero.MovementConfig.GroundDrag: 0f;                
+                body.Rb.linearDamping = (isGrounded) ? _data.Config.Hero.MovementConfig.GroundDrag: 0f;                
 
                 var speed = (isGrounded)
                     ? _data.Config.Hero.MovementConfig.Speed

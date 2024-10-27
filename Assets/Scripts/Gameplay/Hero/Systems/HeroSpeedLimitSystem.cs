@@ -28,14 +28,14 @@ namespace MarioECS
             {
                 ref var body = ref _bodyPool.Get(ent);
 
-                var curVelocity = body.Rb.velocity;
+                var curVelocity = body.Rb.linearVelocity;
                 var horVelocity = new Vector3(curVelocity.x, 0f, curVelocity.z);
                 var speed = _data.Config.Hero.MovementConfig.Speed;
 
                 if (horVelocity.sqrMagnitude <= speed * speed) continue;
 
                 var limitedVelocity = horVelocity.normalized * speed;
-                body.Rb.velocity = new Vector3(limitedVelocity.x, curVelocity.y, limitedVelocity.z);            
+                body.Rb.linearVelocity = new Vector3(limitedVelocity.x, curVelocity.y, limitedVelocity.z);            
             }
         }
     }
